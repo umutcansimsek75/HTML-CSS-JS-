@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript form</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <form id="form">
+
+        <div class="form-control">
+            <label for="username">Ad</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <label for="surname">Soyad</label>
+            <input id="surname" name="surname" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email">
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <label for="yas">Yaş</label>
+            <input id="yas" name="yas" type="age">
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <label for="message">Mesaj</label>
+            <input id="message" name="message" type="message">
+            <div class="error"></div>
+        </div>
+        <button type="submit">Gönder</button>
+    </form>
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const surname = document.getElementById('surname');
+        const email = document.getElementById('email');
+        const yas = document.getElementById('yas');
+        const message = document.getElementById('message');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            validate();
+        });
+
+        const errors = (element, message) => {
+            const Control = element.parentElement;
+            const Displayerror = Control.querySelector('.error');
+
+            Displayerror.innerText = message;
+            Control.classList.add('error');
+            Control.classList.remove('success')
+        }
+
+        const success = element => {
+            const inputControl = element.parentElement;
+            const Displayerror = inputControl.querySelector('.error');
+
+            Displayerror.innerText = '';
+            inputControl.classList.add('success');
+            inputControl.classList.remove('error');
+        };
+
+
+
+        const validate = () => {
+            const usernameValue = username.value.trim();
+            const surnameValue = surname.value.trim();
+            const emailValue = email.value.trim();
+            const yasValue = yas.value.trim();
+            const messageValue = message.value.trim();
+
+            if (usernameValue === '') {
+                errors(username, 'Lütfen adınızı girin');
+            } else {
+                success(username);
+            }
+            if (surnameValue === '') {
+                errors(surname, 'Lütfen soyadınızı girin');
+            } else {
+                success(surname);
+            }
+
+            if (emailValue === '') {
+                errors(email, 'Lütfen E-Postanızı Girin');
+            } else {
+                success(email);
+            }
+
+            if (yasValue === '') {
+                errors(yas, 'Lütfen yaşınızı girin');
+            } else {
+                success(yas);
+            }
+
+            if (messageValue === '') {
+                errors(message, 'Lütfen Bir mesaj bırakın');
+            } else {
+                success(message);
+            }
+        };
+    </script>
+</body>
+
+</html>
