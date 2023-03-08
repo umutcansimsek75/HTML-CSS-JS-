@@ -1,0 +1,7 @@
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\sport.exe
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\appsettings.Development.json
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\appsettings.json
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\sport.dll
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\sport.deps.json
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\sport.runtimeconfig.json
+D:\Projeler\ASP.NET\sport\bin\release\net7.0\publish\sport.pdb
