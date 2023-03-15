@@ -1,0 +1,31 @@
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\appsettings.json
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.staticwebassets.runtime.json
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.exe
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.deps.json
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.runtimeconfig.json
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.dll
+C:\Users\umutc\Desktop\Yeni klasör\bin\Debug\net7.0\Yeni klasör.pdb
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.csproj.AssemblyReference.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.AssemblyInfoInputs.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.AssemblyInfo.cs
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.csproj.CoreCompileInputs.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.RazorAssemblyInfo.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.RazorAssemblyInfo.cs
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets\msbuild.Yeni klasör.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets\msbuild.build.Yeni klasör.props
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Yeni klasör.props
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Yeni klasör.props
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\scopedcss\bundle\Yeni klasör.styles.css
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\scopedcss\projectbundle\Yeni klasör.bundle.scp.css
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.dll
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\refint\Yeni klasör.dll
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.pdb
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\Yeni klasör.genruntimeconfig.cache
+C:\Users\umutc\Desktop\Yeni klasör\obj\Debug\net7.0\ref\Yeni klasör.dll
