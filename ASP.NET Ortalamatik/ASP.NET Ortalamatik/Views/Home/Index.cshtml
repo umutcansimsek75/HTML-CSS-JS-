@@ -1,0 +1,95 @@
+﻿@using OrtalaMatik.Models.Entities;
+@model Lessons;
+
+@{
+    int dersOrtalamasi = 0;
+    int tumDerslerinOrtalamasi = 0;
+    int toplamKredi = 0;
+    bool duzenlemeModu = false;
+
+    if (Model.lessons.Count > 0)
+    {
+        foreach (var item in Model.lessons!)
+        {
+            dersOrtalamasi = item.Note * item.Credit;
+            tumDerslerinOrtalamasi = tumDerslerinOrtalamasi + dersOrtalamasi;
+            toplamKredi = toplamKredi + item.Credit;
+
+        }
+        tumDerslerinOrtalamasi = tumDerslerinOrtalamasi / toplamKredi;
+    }
+    ViewData["Title"] = "HesaplaMatik";
+}
+
+<form method="post" action="@((duzenlemeModu == true) ? "/edit-lesson/" : "/add-lesson")">
+    @Html.AntiForgeryToken()
+    <label>Lesson Name:</label>
+    <input asp-for="LessonName" class="form-control">
+    <span asp-validation-for="LessonName" id="LessonName" class="text-danger"></span>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <label>Credit:</label>
+            <select asp-for="Credit" id="Credit" class="form-control">
+                <option value="1">1 Kredi</option>
+                <option value="2">2 Kredi</option>
+                <option value="3">3 Kredi</option>
+                <option value="4">4 Kredi</option>
+            </select>
+            <span asp-validation-for="Credit" class="text-danger"></span>
+        </div>
+        <div class="col-6">
+            <label>Note:</label>
+            <input asp-for="Note" id="Note" class="form-control">
+            <span asp-validation-for="Note" class="text-danger"></span>
+        </div>
+    </div>
+    <br>
+    <div style="float: right;">
+        @if (duzenlemeModu == true)
+        {
+            <button id="submitButton" type="submit" class="btn btn-warning">Edit</button>
+        }
+        @if (duzenlemeModu == false)
+        {
+            <button id="submitButton" type="submit" class="btn btn-success">Ekle</button>
+        }
+    </div>
+</form>
+<h2>Ortalama: @tumDerslerinOrtalamasi</h2>
+<h3>Lessons</h3>
+@foreach (var item in Model.lessons!)
+{
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <span asp-validation-for="LessonName" id="LessonName" class="text-danger"></span>
+                <h5 class="card-title">@item.LessonName</h5>
+                <hr>
+                <p class="card-text"><b>Note:</b> @item.Note</p>
+                <p class="card-text"><b>Credit:</b> @item.Credit</p>
+                <a href="/delete-lesson/@item.Id" class="btn btn-danger">Delete</a>
+                <button onclick="setTextBoxValue('@item.Id', '@item.LessonName', '@item.Note', '@item.Credit');"
+                    class="btn btn-warning">Edit</button>
+            </div>
+        </div>
+    </div>
+    <br>
+}
+
+<script>
+    function setTextBoxValue(Id, LessonName, Note, Credit) {
+    @duzenlemeModu = true;
+        $('#LessonName').val(LessonName);
+        $('#Note').val(Note);
+        $('#Credit').val(Credit);
+        $('#submitButton').text('Kaydet');
+        $('#submitButton').removeClass('btn-success');
+        $('#submitButton').addClass('btn-warning');
+    }
+    const btn = document.getElementById('submitButton');
+
+    btn.addEventListener('click', function handleClick() {
+        btn.value = 'Button clicked';
+    });
+</script>
