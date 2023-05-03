@@ -1,0 +1,7 @@
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\TodoList.exe
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\appsettings.json
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\TodoList.dll
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\TodoList.deps.json
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\TodoList.runtimeconfig.json
+C:\Users\WT-OGRENCI-01\Desktop\TodoList\bin\Release\net6.0\publish\TodoList.pdb
