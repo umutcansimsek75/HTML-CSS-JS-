@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Yeni klasör.props" />
-</Project>
